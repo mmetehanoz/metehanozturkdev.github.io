@@ -44,3 +44,39 @@ footer {
         font-size: 16px;
     }
 }
+
+
+/* ... önceki CSS stil tanımlamalarınız ... */
+
+/* Menü toggle için stil */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive nav menü için stil */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #333;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav ul.showing {
+        display: block;
+    }
+    
+    nav ul li {
+        margin: 0;
+        padding: 10px;
+    }
+}
